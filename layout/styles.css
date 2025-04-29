@@ -1,0 +1,213 @@
+    /* Reset một số mặc định trình duyệt */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      /* Không padding ở đây */
+    }
+      header{
+        height: 180px;
+        /* background-color: rgb(248, 255, 52); */
+        width: 100%;
+      }
+      /* header top */
+      .header-top{
+        background-color: rgb(248, 255, 52);
+        display: flex;
+        text-align: center;
+        align-items: center;
+        height:90px;
+        gap: 70px;
+        padding: 0 100px;
+        justify-content: space-between;
+        
+      }
+      .header-button {
+        display: flex;
+        overflow-x: auto; /* Cho phép cuộn ngang nếu logo nhiều */
+        white-space: nowrap;
+        max-width: 100%;
+        justify-content: space-between;
+        background-color: #ff2600; /* Màu nền nhẹ giống navbar */
+        padding: 10px 100px;
+        border-bottom: 1px solid #ddd;
+        gap: 20px;
+        scrollbar-width: thin; /* Firefox */
+      }
+      .search-box {
+        display: flex;
+        width: 500px;
+        height: 60px;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden;
+        background-color: #fff;
+      }
+      button{
+        width: 60px;
+        background-color: red;
+        border: none;
+      }
+      
+      .search-box input {
+        flex: 1;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        outline: none;
+      }
+      
+      .functions {
+        display: flex;
+        justify-content: space-around;
+      
+      }
+      
+      .functions a {
+        text-align: center;
+        display: flex;
+        text-decoration: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        width: 120px;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+      }
+      
+      .functions a i {
+        font-size: 30px;
+        color: rgb(245, 75, 2);
+        margin-bottom: 6px;
+      }
+      
+      .functions a span {
+        font-size: 14px;
+        list-style: none;
+        color: #555;
+      }
+      
+      
+      
+      .functions a:hover span {
+        color: #1890ff; /* Màu chữ khi hover */
+      }
+
+      .phone {
+        display: flex;
+        align-items: center; /* Căn chỉnh theo chiều dọc */
+        justify-content: center; /* Căn giữa các phần tử theo chiều ngang */
+      }
+      /* menu */
+      .image-logo a img {
+        width: 100px;
+        height: 30px;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+      }
+      
+      /* Hover hiệu ứng */
+      .image-logo a img:hover {
+        transform: scale(1.1);
+      }
+      
+      /* Tùy chọn: ẩn scrollbar (Chrome, Edge, Safari) */
+      .header-button::-webkit-scrollbar {
+        height: 6px;
+      }
+      .header-button::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 10px;
+      }
+      /* fotter  */
+    footer{
+      height: 350px;
+      background-color: #ff0202;
+      display: flex;
+      justify-content: space-between;
+    padding: 30px 100px;
+    }
+    footer h5 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+footer ul li a:hover {
+  color: #0d6efd;
+}
+
+/* Cấu trúc footer */
+.footer-row {
+  margin-bottom: 30px;
+}
+
+.footer-row .payment-methods li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-row .payment-methods li i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: white;
+}
+
+.footer-row .payment-methods li:hover {
+  color: #0d6efd;
+}
+
+/* Responsive: Chia các cột cho các màn hình nhỏ */
+@media (max-width: 768px) {
+  footer {
+    padding: 40px 10px;
+  }
+
+  .footer-row {
+    margin-bottom: 20px;
+  }
+}
+.phone-number{
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 30px;
+  display: flex;
+  text-align: center;
+ align-items: center;
+ justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: yellow;
+  color: #ff0000;
+  margin: 20px 0px;
+
+}
+h4{
+  color: #fdeeee;
+}
