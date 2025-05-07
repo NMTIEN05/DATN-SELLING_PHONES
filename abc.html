@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bộ lọc sản phẩm điện thoại theo giá</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            color: #555;
+            margin: 20px;
+        }
+        .filter-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .price-filter {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .price-btn {
+            padding: 8px 16px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .price-btn:hover {
+            background-color: #e0e0e0;
+        }
+        .price-btn.active {
+            background-color: #007bff;
+            color: white;
+            border-color: #0056b3;
+        }
+        .custom-range {
+            margin-top: 20px;
+        }
+        .range-inputs {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .range-inputs input {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 120px;
+        }
+        .apply-btn {
+            padding: 8px 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .apply-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bộ lọc sản phẩm điện thoại theo giá</h1>
+    
+    <div class="filter-container">
+        <h2>Lọc theo giá</h2>
+        <div class="price-filter">
+            <div class="price-btn active">Dưới 2 triệu</div>
+            <div class="price-btn">2 - 4 triệu</div>
+            <div class="price-btn">4 - 7 triệu</div>
+            <div class="price-btn">7 - 13 triệu</div>
+            <div class="price-btn">13 - 20 triệu</div>
+            <div class="price-btn">Trên 20 triệu</div>
+        </div>
+        
+        <div class="custom-range">
+            <h3>Khoảng giá tùy chọn</h3>
+            <form action="#" method="get">
+                <div class="range-inputs">
+                    <input type="number" name="min-price" placeholder="Giá thấp nhất" min="0">
+                    <span>-</span>
+                    <input type="number" name="max-price" placeholder="Giá cao nhất">
+                    <button type="submit" class="apply-btn">Áp dụng</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
